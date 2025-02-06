@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+      "target": "ESNext",
+    //   "target": "es2018",
+    "resolveJsonModule": true,
+      "allowJs": true,
+      "rootDir": ".",
+      "outDir": "./dist",
+      "declaration": false,
+      "skipLibCheck": true,
+      "baseUrl": ".",
+      "strict": true,
+      "moduleResolution": "node",
+      "alwaysStrict": true,
+    //   "importsNotUsedAsValues": "preserve",
+      "checkJs": true,
+      "types": ["node"],
+    //   "module": "ES6",
+      "module": "CommonJS",
+      "esModuleInterop": true,
+      "downlevelIteration": true,
+      "noEmitOnError": true,
+      "skipDefaultLibCheck": true
+    },
+    "exclude": ["./dist", "./node_modules"],
+    "include": ["./src"]
+}
