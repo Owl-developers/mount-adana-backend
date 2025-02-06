@@ -1,8 +1,8 @@
 import express, { json, static as _static,response } from "express";
 import mongoose from "mongoose";  
 import verify from "jsonwebtoken";
-import cookieParser from 'cookie-parser';
-import multer, { diskStorage } from 'multer';
+// import cookieParser from 'cookie-parser';
+// import multer, { diskStorage } from 'multer';
 import {config} from "dotenv"
 config()
 const {connect} = mongoose
@@ -31,7 +31,7 @@ var corsOptions = {
 app.use(cors(corsOptions));
 
 app.use(json())
-app.use(cookieParser())
+// app.use(cookieParser())
 app.use(_static('upload'))
 
 
